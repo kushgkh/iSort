@@ -89,14 +89,15 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         Button loginButton = (Button) findViewById(R.id.LoginButton);
         final TextView t = (TextView)findViewById(R.id.pointsText);
-
-
+        Button statsButton = (Button) findViewById(R.id.statsButton);
+        statsButton.setText("Stats");
 
         if(data == null || data == ""){
             data = "Please login first!!!";
             fab.setVisibility(View.GONE);
             loginButton.setText("Login/Sign Up");
             t.setVisibility(View.GONE);
+            statsButton.setVisibility(View.GONE);
         }
         else
         {
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
             points++;
             t.setText("Points: " + points);
-            startCamera();
+            //startCamera();
 
         }
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -123,8 +124,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                     points++;
                     t.setText("Points: " + points);
-                    startCamera();
+                    //startCamera();
                   //startActivity(new Intent(MainActivity.this, LoginPage.class));
+
+            }
+        });
+        statsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, StatsPage.class));
 
             }
         });

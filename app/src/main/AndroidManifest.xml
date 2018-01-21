@@ -36,6 +36,7 @@
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".LoginPage" />
+        <activity android:name=".StatsPage"></activity>
     </application>
 
 </manifest>
