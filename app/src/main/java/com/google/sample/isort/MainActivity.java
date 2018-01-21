@@ -109,11 +109,11 @@ public class MainActivity extends AppCompatActivity {
             //startCamera();
 
         }
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        educButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //startCamera();
-                startActivity(new Intent(MainActivity.this, LoginPage.class));
+                startActivity(new Intent(MainActivity.this, EducationActivity.class));
 
             }
         });
@@ -138,6 +138,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, LoginPage.class));
+
+            }
+        });
+
 
 
     }

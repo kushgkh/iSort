@@ -1,72 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center|top"
-    android:gravity="center|top"
     android:layout_marginTop="60dp"
+    android:background="@color/background"
+    android:gravity="top"
+    android:orientation="vertical"
     tools:context="com.google.sample.isort.EducationActivity">
-
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recycle"/>
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Recycle" />
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Aluminum Bottle"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
-                    <ImageView
-                        android:layout_gravity="center|bottom"
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Aluminum Bottle" />
 
+                    <ImageView
                         android:layout_width="96dp"
+
                         android:layout_height="103dp"
+                        android:layout_gravity="center|bottom"
                         android:src="@drawable/recyclealuminumbottle" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Aluminum Can"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Aluminum Can" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -74,37 +79,42 @@
                         android:layout_gravity="bottom|center"
                         android:src="@drawable/recyclealuminumcan" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Corrugated Paper"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Corrugated Paper" />
+
                     <ImageView
                         android:layout_width="96dp"
                         android:layout_height="103dp"
                         android:src="@drawable/recycledcorrugatedpaper" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="News Paper"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="News Paper" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -112,19 +122,21 @@
                         android:layout_gravity="bottom"
                         android:src="@drawable/recyclenewspaper" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Water Bottle"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Water Bottle" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -137,51 +149,58 @@
 
 
         <TextView
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Compost"/>
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Compost" />
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Coffe Ground"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Coffe Ground" />
+
                     <ImageView
                         android:layout_width="96dp"
                         android:layout_height="103dp"
                         android:src="@drawable/compostcoffeeground" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Eggs"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Eggs" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -189,19 +208,21 @@
                         android:layout_gravity="bottom"
                         android:src="@drawable/composteggs" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Food"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Food" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -209,19 +230,21 @@
                         android:layout_gravity="bottom"
                         android:src="@drawable/compostfood" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Napkins"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Napkins" />
 
                     <ImageView
                         android:layout_width="96dp"
@@ -229,19 +252,22 @@
                         android:layout_gravity="bottom"
                         android:src="@drawable/compostnapkins" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Tea Bags"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Tea Bags" />
+
                     <ImageView
                         android:layout_width="96dp"
                         android:layout_height="103dp"
@@ -249,121 +275,152 @@
                 </android.support.v7.widget.CardView>
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Trash"/>
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Trash" />
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Coat"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Coat" />
 
                     <ImageView
-                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="76dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/trashcoat" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Foam"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Foam" />
 
                     <ImageView
-                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="83dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/trashfoam" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Needle"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Needle" />
 
                     <ImageView
-                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="85dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/trashneedle" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Rubber Duck"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Rubber Duck" />
 
                     <ImageView
-                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="84dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/trashrubberduck" />
                 </android.support.v7.widget.CardView>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingTop="20dp">
+
                     <TextView
-                        android:text="Wood"
-                        android:layout_gravity="center|top"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"/>
+                        android:layout_gravity="center|top"
+                        android:paddingBottom="10dp"
+                        android:text="Wood" />
+
                     <ImageView
-                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="103dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/trashwood" />
                 </android.support.v7.widget.CardView>
             </LinearLayout>
         </HorizontalScrollView>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Back"
+        android:layout_marginBottom="0px"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"
+
+        android:background="@drawable/newbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
 </LinearLayout>

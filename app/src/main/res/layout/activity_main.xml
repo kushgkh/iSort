@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/LoginButton"
-        android:layout_width="match_parent"
+        android:layout_width="1000px"
         android:layout_height="wrap_content"
         android:text="Login / Signup"
         android:layout_gravity="bottom"
@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/statsButton"
-        android:layout_width="match_parent"
+        android:layout_width="1000px"
         android:layout_height="wrap_content"
         android:text="Statistics"
         android:layout_gravity="bottom"
@@ -68,7 +68,7 @@
         android:shadowRadius="5"/>
     <Button
         android:id="@+id/eduButton"
-        android:layout_width="match_parent"
+        android:layout_width="1000px"
         android:layout_height="wrap_content"
         android:text="Learn More!"
         android:layout_gravity="bottom"
