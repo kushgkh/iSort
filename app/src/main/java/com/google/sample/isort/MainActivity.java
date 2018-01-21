@@ -90,14 +90,15 @@ public class MainActivity extends AppCompatActivity {
         Button loginButton = (Button) findViewById(R.id.LoginButton);
         final TextView t = (TextView)findViewById(R.id.pointsText);
         Button statsButton = (Button) findViewById(R.id.statsButton);
-        statsButton.setText("Stats");
+        Button educButton = (Button) findViewById(R.id.eduButton);
+
 
         if(data == null || data == ""){
             data = "Please login first!!!";
             fab.setVisibility(View.GONE);
-            loginButton.setText("Login/Sign Up");
             t.setVisibility(View.GONE);
             statsButton.setVisibility(View.GONE);
+            educButton.setVisibility(View.GONE);
         }
         else
         {
