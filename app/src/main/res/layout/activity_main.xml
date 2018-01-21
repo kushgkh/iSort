@@ -35,16 +35,35 @@
         android:id="@+id/LoginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Login / Signup"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="50px"/>
+        android:layout_marginBottom="50px"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/newbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
 
     <Button
         android:id="@+id/statsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Statstics"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="140px"/>
+        android:layout_marginBottom="140px"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/newbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
 
 </android.support.design.widget.CoordinatorLayout>
