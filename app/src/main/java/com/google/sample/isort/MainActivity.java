@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(data == null || data == ""){
-            data = "Please login first!";
+            data = "Please login first!!!";
             fab.setVisibility(View.GONE);
             loginButton.setText("Login/Sign Up");
             t.setVisibility(View.GONE);
