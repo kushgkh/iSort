@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                     points++;
                     t.setText("Points: " + points);
-                    //startCamera();
+                    startCamera();
                   //startActivity(new Intent(MainActivity.this, LoginPage.class));
 
             }
