@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="@color/mint_green">
+    android:background="@color/background">
 
     <ImageView
         android:layout_width="500px"
