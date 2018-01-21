@@ -108,6 +108,7 @@
                     <ImageView
                         android:layout_width="96dp"
                         android:layout_height="85dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/recyclenewspaper" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -123,9 +124,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="88dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/recyclewaterbottle" />
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -178,9 +181,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="84dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/composteggs" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -196,9 +201,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="82dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/compostfood" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -214,9 +221,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
                         android:src="@drawable/compostnapkins" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -267,9 +276,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
+                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="76dp"
                         android:src="@drawable/trashcoat" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -285,9 +296,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
+                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="83dp"
                         android:src="@drawable/trashfoam" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -303,9 +316,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
+                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="85dp"
                         android:src="@drawable/trashneedle" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -321,9 +336,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
+
                     <ImageView
+                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
-                        android:layout_height="103dp"
+                        android:layout_height="84dp"
                         android:src="@drawable/trashrubberduck" />
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
@@ -340,6 +357,7 @@
                         android:layout_height="wrap_content"
                         android:paddingBottom="10dp"/>
                     <ImageView
+                        android:layout_gravity="bottom"
                         android:layout_width="96dp"
                         android:layout_height="103dp"
                         android:src="@drawable/trashwood" />
