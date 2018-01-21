@@ -36,7 +36,8 @@
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".LoginPage" />
-        <activity android:name=".StatsPage"></activity>
+        <activity android:name=".StatsPage" />
+        <activity android:name=".EducationActivity"></activity>
     </application>
 
 </manifest>
