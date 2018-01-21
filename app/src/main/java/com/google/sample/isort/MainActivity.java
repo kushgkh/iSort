@@ -14,21 +14,20 @@
  * limitations under the License.
  */
 
-package com.google.sample.cloudvision;
+package com.google.sample.isort;
 
 import android.Manifest;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.FileProvider;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -58,6 +57,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private static final String CLOUD_VISION_API_KEY = "AIzaSyBVdz4nGjITs4GHz2FSndcAaeD_1W5mtKg";
@@ -74,26 +74,53 @@ public class MainActivity extends AppCompatActivity {
     private TextView mImageDetails;
     private ImageView mMainImage;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+       setSupportActionBar(toolbar);
+        mImageDetails = (TextView) findViewById(R.id.image_details);
+        mMainImage = (ImageView) findViewById(R.id.main_image);
+        String data = DataHolder.getData();
+        mImageDetails.setText(data);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        startCamera();
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button loginButton = (Button) findViewById(R.id.LoginButton);
+        if(data == null || data == ""){
+            data = "Please login first!";
+            fab.setVisibility(View.GONE);
+            loginButton.setText("Login/Sign Up");
+        }
+        else
+        {
+            loginButton.setVisibility(View.GONE);
+            startCamera();
+        }
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                     startCamera();
+                //startCamera();
+                startActivity(new Intent(MainActivity.this, LoginPage.class));
 
             }
         });
 
-        mImageDetails = (TextView) findViewById(R.id.image_details);
-        mMainImage = (ImageView) findViewById(R.id.main_image);
+
+       // startCamera();
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                   startCamera();
+                  //startActivity(new Intent(MainActivity.this, LoginPage.class));
+
+            }
+        });
+
+
     }
+
 
     public void startGalleryChooser() {
         if (PermissionUtils.requestPermission(this, GALLERY_PERMISSIONS_REQUEST, Manifest.permission.READ_EXTERNAL_STORAGE)) {
@@ -125,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -299,7 +327,7 @@ public class MainActivity extends AppCompatActivity {
                 if(message.contains("bottle")){
                     message += "\nRECYCLE!!!!!!";
                 }
-                if(message.contains("product")){
+                if(message.contains("pencil")){
                     message += "\nTRASH!!!!";
                 }
                 if(message.contains("food")){
