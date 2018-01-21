@@ -73,30 +73,39 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mImageDetails;
     private ImageView mMainImage;
-
+    static int points= 0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-       setSupportActionBar(toolbar);
+     //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+      // setSupportActionBar(toolbar);
         mImageDetails = (TextView) findViewById(R.id.image_details);
         mMainImage = (ImageView) findViewById(R.id.main_image);
         String data = DataHolder.getData();
         mImageDetails.setText(data);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         Button loginButton = (Button) findViewById(R.id.LoginButton);
+        final TextView t = (TextView)findViewById(R.id.pointsText);
+
+
+
         if(data == null || data == ""){
             data = "Please login first!";
             fab.setVisibility(View.GONE);
             loginButton.setText("Login/Sign Up");
+            t.setVisibility(View.GONE);
         }
         else
         {
             loginButton.setVisibility(View.GONE);
+
+            points++;
+            t.setText("Points: " + points);
             startCamera();
+
         }
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +121,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                   startCamera();
+                    points++;
+                    t.setText("Points: " + points);
+                    startCamera();
                   //startActivity(new Intent(MainActivity.this, LoginPage.class));
 
             }
@@ -143,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             startActivityForResult(intent, CAMERA_IMAGE_REQUEST);
+
         }
     }
 
@@ -322,21 +334,28 @@ public class MainActivity extends AppCompatActivity {
             for (EntityAnnotation label : labels) {
                 message += String.format(Locale.US, "%.3f: %s", label.getScore(), label.getDescription());
                 if(message.contains("paper")){
-                    message += "\nRECYCLE!!!!!!!!!!!!";
+                    message = "\nRECYCLE!!";
+                    break;
                 }
                 if(message.contains("bottle")){
-                    message += "\nRECYCLE!!!!!!";
+                    message = "\nRECYCLE!!";
+                    break;
                 }
                 if(message.contains("pencil")){
-                    message += "\nTRASH!!!!";
+                    message = "\nTRASH!!";
+                    break;
                 }
                 if(message.contains("food")){
-                    message += "\nCOMPOST!!!!";
+                    message = "\nCOMPOST!!";
+                    break;
                 }
 
             }
         } else {
             message += "nothing";
+        }
+        if(message.length() > 12){
+            message = "TRASH!!";
         }
 
         return message;
